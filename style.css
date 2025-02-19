@@ -1,0 +1,102 @@
+.navbar{
+    background-color: #275174;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px gray
+}
+.navbar-brand{
+    margin-right: 30px;
+}
+.navbar-nav .nav-item{
+    margin-left: 20px;
+}
+.nav-light .navbar-nav .nav-link{
+
+    color: lightgrey;
+}
+.nav-light .navbar-nav .nav-link:hover{
+    color: #96a480;
+}
+h1{
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #275174;
+    font-weight: bold;
+    margin: 20px;
+}
+h2{
+    text-align: left;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+}
+.btn{
+    color: black;
+    background-color: grey;
+    line-height: 25px
+}
+.btn:hover{
+    color: #275174;
+
+}
+.nav-brand image{
+    border-radius: 10px;
+    size-adjust: 20px 20px ;
+
+}
+.image{
+    height: auto;
+    width: 100%;
+    
+}
+.btn2{
+    color:white;
+    background-color:#275174;
+    border-radius: 12px;
+    border-color: gold;
+    justify-content: right;
+    margin: 20px;
+}
+.btn3{
+    color: white;
+    background-color: #275174;
+    border-radius: 20px;
+    border-color: gold;
+    margin-left: 30px;
+    size: 30px;
+}.card-img-top{
+    max-width: max-content;
+    height: auto;
+}
+.btn4{
+    background-color: #275174;
+    color: white;
+}.one{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 11px 20px;
+}
+.pri{
+    font-family: 'Trebuchet MS';font-size: x-large; font-style: italic;
+}
+.two{
+    display: flex;
+    align-items: center;
+    gap: 20opx;
+    padding: 11px 20px;
+}
+.three{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    padding: 11px 20px;
+}.four{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    padding: 11px 20px;
+}
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
