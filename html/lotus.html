@@ -1,49 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lotus</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <h3>Lotus Restaurant Menu</h3>
-    <div class="card" style="width: 36rem">
-      <img src="/assets/pasta.png" class="card-img-top" alt="pasta" />
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lotus</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body {
+      overflow-x: hidden;
+      margin: 20px;
+    }
+
+    .navbar {
+      background-color: #275174;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px gray
+    }
+
+    .navbar-brand {
+      margin-right: 30px;
+    }
+
+    .navbar-nav .nav-item {
+      margin-left: 20px;
+    }
+
+    .nav-light .navbar-nav .nav-link {
+
+      color: lightgrey;
+    }
+
+    .nav-light .navbar-nav .nav-link:hover {
+      color: #96a480;
+    }
+  </style>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="/assets/logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Overview
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">ROOMS and SUITES AVAILABILITY</a></li>
+              <li><a class="dropdown-item" href="#">DATES and GUESTS</a></li>
+              <li><a class="dropdown-item" href="#">REVIEWS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Experiences
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <li><a class="dropdown-item" href="#">MODERN SPA</a></li>
+              <li><a class="dropdown-item" href="#">FITNESS CENTER</a></li>
+              <li><a class="dropdown-item" h ref="#">SWIMMING</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Special Rates
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <li><a class="dropdown-item" href="#">HONEYMOONERS</a></li>
+              <li><a class="dropdown-item" href="#">EVENTS</a></li>
+              <li><a class="dropdown-item" href="#">CONFERENCES</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dining
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <li><a class="dropdown-item" href="/html/lounge.html">LOUNGE RESTAURANT</a></li>
+              <li><a class="dropdown-item" href="#">LOUNGE BAR</a></li>
+              <li><a class="dropdown-item" href="/html/lotus.html">THE LOTUS RESTAURANT</a></li>
+              <li><a class="dropdown-item" href="#">SKY TOP BAR</a></li>
+              <li><a class="dropdown-item" href="#">HACKNEY RESTAURANT</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Interact with us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <li><a class="dropdown-item" href="#">CONTACT US</a></li>
+              <li><a class="dropdown-item" href="#">LOCATION AND MAPS</a></li>
+              <li><a class="dropdown-item" href="#">COMMUNITY</a></li>
+            </ul>
+          </li>
+          <button type="button" class="btn">BOOK NOW</button>
+      </div>
+  </nav>
+  <hr>
+</head>
+
+<body>
+  <h3>BREAKFAST MENU</h3>
+  <div class="card-deck">
+    <div class="card">
+      <img src="/assets/pastries.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <p class="card-text">
-          <b>Shrimp Pasta</b>
-          <br>
-          <b>100 Pounds</b>
-        </p>
+        <h5 class="card-title">Croissants</h5>
+        <p class="card-text">Croissants served with hot chocolate latte.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Ksh 450</small>
       </div>
     </div>
-    <br>
-    <div class="card" style="width: 36rem">
-      <img src="/assets/steak.png" class="card-img-top" alt="steak" />
+    <div class="card">
+      <img src="/assets/cake.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <p class="card-text">
-          <b>Steak served with veggies</b>
-          <br>
-          <b>55 Pounds</b>
-        </p>
+        <h5 class="card-title">New York Cheese Cake</h5>
+        <p class="card-text">Served with hot beverage of choice.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Ksh 520</small>
       </div>
     </div>
-    <br>
-    <div class="card" style="width: 36rem">
-      <img src="/assets/pizza.png" class="card-img-top" alt="pizza" />
+    <div class="card">
+      <img src="/assets/pancake.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <p class="card-text">
-          <b>Chef's Special Pizza</b>
-          <br>
-          <b>30 Pounds</b>
-        </p>
+        <h5 class="card-title">Pancakes</h5>
+        <p class="card-text">With syrup and banana cutlets served with hot beverage of your choice.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Ksh 300</small>
       </div>
     </div>
-  </body>
+  </div>
+  <br>
+  <br>
+  <h3>LUNCH MENU</h3>
+  <div class="card-deck">
+    <div class="card">
+      <img src="/assets/salad.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Vegetable Salad</h5>
+        <p class="card-text">Mixed Vegetable salad.</p>
+        <p class="card-text"><small class="text-muted">Ksh 600</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/assets/burger.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-text">Beef Burger</h5>
+        <p class="card-text">Beef Burger with Cheese served with fries and tartar sauce.</p>
+        <p class="card-text"><small class="text-muted">Ksh 650</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/assets/pizza.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Vegetable Pizza</h5>
+        <p class="card-text">Vegetable Pizza accompanied with passion juice</p>
+        <p class="card-text"><small class="text-muted">Ksh 950</small></p>
+      </div>
+    </div>
+  </div>
+  <h3>DINNER MENU</h3>
+  <div class="card-deck">
+    <div class="card">
+      <img src="/assets/chicken.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Butter Chicken</h5>
+        <p class="card-text">Butter Chicken with rosemary seasoning served with veges and garlic mushroom sauce.</p>
+        <p class="card-text"><small class="text-muted">Ksh 1100</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/assets/sushi.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Sushi</h5>
+        <p class="card-text">6 Pieces of sushi served with sushi sauce.</p>
+        <p class="card-text"><small class="text-muted">Ksh 1250</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/assets/steak.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Steak Bowl</h5>
+        <p class="card-text">Steak served with veges.</p>
+        <p class="card-text"><small class="text-muted">Ksh 750</small></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Google -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-linkedin-in"></i></a>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" id="form5Example24" class="form-control" />
+                <label class="form-label" for="form5Example24">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button data-mdb-ripple-init type="submit" class="btn btn-outline mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Thank you for choosing Lotus Hotel,your home away from home. We are comitted to proving
+          exceptional service and a memrable stay.For reservations and enquiries feel free to
+          contact us anytime. We look forwardto welcoming you.
+        </p>
+      </section><!-- Copyright -->
+      <div class="text-center p-3 text-white" style="background-color: #275174">
+        © 2024 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">lotushotels.com</a>
+      </div>
+      <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
 </html>

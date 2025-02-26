@@ -99,3 +99,54 @@ h2{
     gap: 200px;
     padding: 11px 20px;
 }
+.conv{
+    justify-content: center;
+    text-align: center;
+    font-size: xx-large;
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.phone{
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    margin: 20px;
+}
+.card-img-overlay{
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+}
+.card-text{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: aliceblue;
+}
+.form-row{
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.form-group{
+    color: white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+.form-control{
+    background-color: whitesmoke ;
+    color: whitesmoke
+}
+.btn5{
+    background-color: whitesmoke;
+    color: black;
+    border-color: white;
+}
+.card-img{
+    height: min-content;
+}
+.btn5:hover{
+    color: gray;
+}
