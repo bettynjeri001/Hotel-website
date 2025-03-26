@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            background-color: aliceblue;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #34495e;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #275174;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+        }
+        
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .col {
+            flex: 1;
+        }
+        
+        .date-inputs {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .date-input {
+            flex: 1;
+        }
+        
+        .guest-inputs {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .guest-input {
+            flex: 1;
+        }
+        
+        button {
+            background-color: #275174;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #73a7d1;
+            color: black;
+        }
+        
+        .room-type-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .room-option {
+            flex: 1 1 calc(50% - 10px);
+            min-width: 150px;
+        }
+        
+        .room-option input {
+            display: none;
+        }
+        
+        .room-option label {
+            display: block;
+            padding: 15px;
+            background: #f9f9f9;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .room-option input:checked + label {
+            background: #e1f0fa;
+            border-color: #275174;
+            color: #275174;
+        }
+        
+        @media (max-width: 600px) {
+            .row, .date-inputs, .guest-inputs {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .room-option {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hotel Reservation</h1>
+        
+        <form id="bookingForm">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Dates</label>
+                <div class="date-inputs">
+                    <div class="date-input">
+                        <label for="checkIn">Check-In</label>
+                        <input type="date" id="checkIn" name="checkIn" required>
+                    </div>
+                    <div class="date-input">
+                        <label for="checkOut">Check-Out</label>
+                        <input type="date" id="checkOut" name="checkOut" required>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Guests</label>
+                <div class="guest-inputs">
+                    <div class="guest-input">
+                        <label for="adults">Adults</label>
+                        <select id="adults" name="adults">
+                            <option value="1">1</option>
+                            <option value="2" selected>2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="guest-input">
+                        <label for="children">Children</label>
+                        <select id="children" name="children">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Room Type</label>
+                <div class="room-type-options">
+                    <div class="room-option">
+                        <input type="radio" id="standard" name="roomType" value="standard" checked>
+                        <label for="standard">Standard Room</label>
+                    </div>
+                    <div class="room-option">
+                        <input type="radio" id="deluxe" name="roomType" value="deluxe">
+                        <label for="deluxe">Executive Room</label>
+                    </div>
+                    <div class="room-option">
+                        <input type="radio" id="suite" name="roomType" value="suite">
+                        <label for="suite">Suite</label>
+                    </div>
+                   
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="specialRequests">Special Requests</label>
+                <textarea id="specialRequests" name="specialRequests" rows="4"></textarea>
+            </div>
+            
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+    
+</body>
+</html>
